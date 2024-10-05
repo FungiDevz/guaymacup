@@ -1,0 +1,164 @@
+.orbitron {
+    font-family: "Orbitron", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cutive-mono-regular {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.morenito{
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.molle-regular-italic {
+    font-family: "Molle", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 0 30px;
+}
+
+header img{
+    width: 200px;
+}
+header h2{
+    margin: 0;
+    margin-left: 50px;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title::before, .title::after {
+    content: '';
+    position: absolute;
+    width: 7px; /* Grosor de las líneas */
+    height: 175px; /* Alto de las líneas */
+    background: linear-gradient(to bottom, rgb(255, 255, 255), transparent); /* Gradiente de negro a transparente */
+}
+
+.title::before {
+    left: -20px; /* Ubicación de la línea a la izquierda */
+    top: -15px;
+}
+
+.title::after {
+    right: -20px; /* Ubicación de la línea a la derecha */
+    top: -15px;
+    background: linear-gradient(to top, rgb(255, 255, 255), transparent); /* Gradiente de negro a transparente, pero hacia arriba */
+}
+
+.patrocinadores{
+    margin-left: 50px;
+    height: 100%;
+    width: 500px;
+
+    color: white;
+}
+.patBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+.patrocinadores h4{
+    font-size: 30px;
+}
+
+.patrocinadores h3{
+    font-size: 20px;
+}
+
+
+@media (max-width: 1224px){
+    h2{
+        font-size: 50px;
+    }
+
+    .patBody h4{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1066px){
+    h2{
+        font-size: 30px;
+    }
+
+    .patHead h3{
+        font-size: 13px;
+
+    }
+
+    .patBody h4{
+        font-size: 17px;
+    }
+
+    .title::before, .title::after {
+        width: 5px; /* Grosor de las líneas */
+        height: 125px; /* Alto de las líneas */
+    }
+    
+}
+
+
+@media (max-width: 769px){
+
+    header{
+        padding: 5px;
+    }
+
+    .patrocinadores{
+        display: none;
+    }
+
+    .patHead{
+        display: none;
+    }
+
+    header img{
+        width: 100px;
+
+        position: relative;
+        right: 30px;
+    }
+
+    .title{
+        font-size: 20px;
+
+        margin: 10px;
+        padding: 0;
+    }
+
+    .title::before, .title::after {
+        width: 3px; /* Grosor de las líneas */
+        height: 70px; /* Alto de las líneas */
+    }
+}

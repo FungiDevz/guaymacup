@@ -1,0 +1,114 @@
+body{
+    background-image: url(../img/background.jpg);
+}
+
+main{
+    padding: 0 50px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+main img{
+    height: 500px;
+    
+    border-bottom: solid black 5px;
+}
+
+.volver{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.jugadores{
+    color: white;
+    font-family: "Orbitron", sans-serif;
+
+    text-align: center;
+}
+.goleadores{
+    margin-top: 40px;
+}
+
+td{
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.pos{
+    padding-left: 0;
+}
+.nombre{
+    padding-left: 70px;
+}
+.pg{
+    padding-left: 40px;
+}
+
+
+@media (max-width: 1224px){
+    td{
+        font-size: 20px;
+    }
+
+    main img{
+        height: 450px;
+    }
+}
+
+@media (max-width: 1066px){
+    
+
+    main img{
+        height: 350px;
+    }
+
+    td{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 900px){
+    
+
+    main img{
+        height: 300px;
+    }
+
+    td{
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 769px){
+    main{
+        padding: 0 10px;
+
+        flex-direction: column;
+    }
+
+    td{
+        font-size: 10px;
+        margin: 0;
+        padding: 5px;
+    }
+    .nombre{
+        padding: 5px;
+    }
+
+    .goleadores td{
+        font-size: 15px;
+    }
+
+    main img{
+        margin-top: 40px;
+    }
+
+}

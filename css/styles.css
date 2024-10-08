@@ -74,3 +74,24 @@ h2{
     font-size: 20px;
 }
 
+.caras{
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.caras img{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100000px;
+}
+
+@media (max-width: 769px){
+    .caras img{
+        display: none;
+    }
+
+}
